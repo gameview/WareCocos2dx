@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\common\StringUtility.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\WareIniFile.cpp">
+      <Filter>common\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\WareFileWrite.cpp">
+      <Filter>common\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\WareFileRead.cpp">
+      <Filter>common\File</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\ConfigFileManager.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\engine\WareTime.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\WareSprite.cpp">
+      <Filter>render\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\WareAnimate.cpp">
+      <Filter>render\RenderSystem\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\SpriteObj.cpp">
+      <Filter>render\RenderSystem\Renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\AniSpriteObj.cpp">
+      <Filter>render\RenderSystem\Renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\AnimationRes.cpp">
+      <Filter>render\RenderSystem\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\AnimationResManager.cpp">
+      <Filter>render\RenderSystem\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\SpriteFrameSet.cpp">
+      <Filter>render\RenderSystem\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\engine\WareAppDelegate.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\RectangleObj.cpp">
+      <Filter>render\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\SceneLayer.cpp">
+      <Filter>render\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\TerrainBlock.cpp">
+      <Filter>render\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\TerrainGrid.cpp">
+      <Filter>render\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\SceneManager.cpp">
+      <Filter>render\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\RenderableManager.cpp">
+      <Filter>render\RenderSystem\Renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\RenderObj.cpp">
+      <Filter>render\RenderSystem\RenderObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\RenderObjManager.cpp">
+      <Filter>render\RenderSystem\RenderObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\RenderSystem.cpp">
+      <Filter>render\RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\RenderMap.cpp">
+      <Filter>render\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\StringConvert.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\tinystr.cpp">
+      <Filter>render\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\tinyxml.cpp">
+      <Filter>render\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\tinyxmlerror.cpp">
+      <Filter>render\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\tinyxmlparser.cpp">
+      <Filter>render\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\RenderObjModel.cpp">
+      <Filter>render\RenderSystem\RenderObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\RenderTextManager.cpp">
+      <Filter>render\RenderSystem\RenderText</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\RenderText.cpp">
+      <Filter>render\RenderSystem\RenderText</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\ShaderManager.cpp">
+      <Filter>render\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CMaskSprite.cpp">
+      <Filter>render\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\TerrainMask.cpp">
+      <Filter>render\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\audio\AudioSystem.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\DragonBoneSpriteObj.cpp">
+      <Filter>render\RenderSystem\Renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\DragonBoneAnimation.cpp">
+      <Filter>render\RenderSystem\DragonBoneAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\engine\InputManager.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CEffect.cpp">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CEffectManager.cpp">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CEffectProp.cpp">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CEffectPropManager.cpp">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CEffectSprite.cpp">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CEffectUnit.cpp">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CEffectUnitProp.cpp">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CParticleSystem.cpp">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CParticleSystemProp.cpp">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CTextureAnimation.cpp">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\CTextureAnimationProp.cpp">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\render\ImageLayer.cpp">
+      <Filter>render\Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\render\WareAnimate.h">
+      <Filter>render\RenderSystem\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\WareSprite.h">
+      <Filter>render\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\SpriteObj.h">
+      <Filter>render\RenderSystem\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\AniSpriteObj.h">
+      <Filter>render\RenderSystem\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\AnimationRes.h">
+      <Filter>render\RenderSystem\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\AnimationResManager.h">
+      <Filter>render\RenderSystem\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\SpriteFrameSet.h">
+      <Filter>render\RenderSystem\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\RectangleObj.h">
+      <Filter>render\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\SceneLayer.h">
+      <Filter>render\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\TerrainBlock.h">
+      <Filter>render\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\TerrainGrid.h">
+      <Filter>render\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\SceneManager.h">
+      <Filter>render\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\IRenderable.h">
+      <Filter>render\RenderSystem\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\RenderableManager.h">
+      <Filter>render\RenderSystem\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\RenderObj.h">
+      <Filter>render\RenderSystem\RenderObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\RenderObjManager.h">
+      <Filter>render\RenderSystem\RenderObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\RenderSystem.h">
+      <Filter>render\RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\RenderMap.h">
+      <Filter>render\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\IAnimation.h">
+      <Filter>render\RenderSystem\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\cocos2dx_engine.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\cocos2dx_macros.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\cocos2dx_types.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\MessageCommon.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\WareAppDelegate.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\FileCommon.h">
+      <Filter>common\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\WareFileRead.h">
+      <Filter>common\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\WareFileWrite.h">
+      <Filter>common\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\WareIniFile.h">
+      <Filter>common\File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\ConfigFileManager.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\CSVFileCommon.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\StringConvert.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\StringUtility.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\WareTime.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\IRenderObj.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\IRenderSystem.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\RenderCommon.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\RenderObjModel.h">
+      <Filter>render\RenderSystem\RenderObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\IRenderText.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\RenderTextManager.h">
+      <Filter>render\RenderSystem\RenderText</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\RenderText.h">
+      <Filter>render\RenderSystem\RenderText</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\ShaderManager.h">
+      <Filter>render\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\CMaskSprite.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\TerrainMask.h">
+      <Filter>render\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\IAudioSytem.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\audio\AudioSystem.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\DragonBoneSpriteObj.h">
+      <Filter>render\RenderSystem\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\DragonBoneAnimation.h">
+      <Filter>render\RenderSystem\DragonBoneAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\engine\InputManager.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tinystr.h">
+      <Filter>render\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\tinyxml.h">
+      <Filter>render\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\CEffect.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\CEffectManager.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\CEffectProp.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\CEffectPropManager.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\CEffectSprite.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\CEffectUnit.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\CEffectUnitProp.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\CParticleSystem.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\CParticleSystemProp.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\CTextureAnimation.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\CTextureAnimationProp.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\EffectProp.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\IEffectProp.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\IEffectUnit.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\IEffectUnitProp.h">
+      <Filter>render\RenderSystem\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\render\ImageLayer.h">
+      <Filter>render\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\inc\DataContent.h">
+      <Filter>inc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{8116ae50-ec70-485b-95ee-def40ea42002}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{90398483-8f9d-455e-b765-e39f87e8b4b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\File">
+      <UniqueIdentifier>{03ba51dc-dc04-478d-ab71-3fb8fb1b27d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render">
+      <UniqueIdentifier>{4dd0ba86-51bc-43c6-a698-f89a448b5cae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inc">
+      <UniqueIdentifier>{9eb9173f-1ab1-4fbf-b6f8-f022221b3ae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\Sprite">
+      <UniqueIdentifier>{fa151c5c-2058-459c-bc6b-2df7aba1486b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\RenderSystem">
+      <UniqueIdentifier>{84f57b45-ba1b-42f8-a7ab-4e5130155bfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\Scene">
+      <UniqueIdentifier>{d796dbff-e08f-47da-888e-f0490b8559dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\RenderSystem\Renderable">
+      <UniqueIdentifier>{d507b871-572a-4b7d-9c4f-5880eac05deb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\RenderSystem\RenderObj">
+      <UniqueIdentifier>{6b4a76e6-446d-45fa-bfd1-7af9a84ab4bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\xml">
+      <UniqueIdentifier>{75b3dc8a-518f-45c0-acb8-13ca51077be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\RenderSystem\RenderText">
+      <UniqueIdentifier>{f8231b66-2479-4020-9f6f-87e5f2b06a57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\shader">
+      <UniqueIdentifier>{98e319ef-dc37-4289-924c-149a21e72a78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{31362fa0-609e-403e-a58e-7824b2937780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{5c85fac6-0112-4df0-8538-e5b2562a27af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\RenderSystem\Animation">
+      <UniqueIdentifier>{b2bbc914-3fa5-4a42-9482-d57f5cb67387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\RenderSystem\DragonBoneAnimation">
+      <UniqueIdentifier>{11037b7e-cbc0-41da-ae2c-1979f13c17b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="render\RenderSystem\Effect">
+      <UniqueIdentifier>{b9523572-24e2-4bac-b365-951cd26fdb2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Android.mk" />
+  </ItemGroup>
+</Project>

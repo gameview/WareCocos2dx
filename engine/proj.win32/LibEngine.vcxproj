@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Editor|Win32">
+      <Configuration>Release_Editor</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4AD82D08-BA10-439E-863B-334F5188A0E5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LibEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Editor|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_Editor|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration).win32</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration).win32</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Editor|Win32'">
+    <OutDir>$(SolutionDir)Bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)obj\$(ProjectName)\$(Configuration).win32</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_LIB;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\pthread;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)CocosDenshion\include;$(SolutionDir)extensions;$(SolutionDir)extensions\GUI;$(SolutionDir)extensions\CocoStudio\GUI;$(SolutionDir)extensions\CocoStudio\GUI\System;$(SolutionDir)extensions\CocoStudio\GUI\BaseClasses;$(SolutionDir)extensions\CocoStudio\GUI\Layouts;$(SolutionDir)extensions\CocoStudio\GUI\UIWidgets;$(SolutionDir)Include;$(SolutionDir)Common;..\Render;$(SolutionDir)engine\inc;../;$(SolutionDir)../Common;$(SolutionDir)../Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\pthread;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)CocosDenshion\include;$(SolutionDir)extensions;$(SolutionDir)extensions\GUI;$(SolutionDir)extensions\CocoStudio\GUI;$(SolutionDir)extensions\CocoStudio\GUI\System;$(SolutionDir)extensions\CocoStudio\GUI\BaseClasses;$(SolutionDir)extensions\CocoStudio\GUI\Layouts;$(SolutionDir)extensions\CocoStudio\GUI\UIWidgets;$(SolutionDir)Include;$(SolutionDir)Common;..\Render;$(SolutionDir)engine\inc;../;$(SolutionDir)../Common;$(SolutionDir)../Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4251;4244;</DisableSpecificWarnings>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_Editor|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_LIB;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;COCOS2D_DEBUG=1;OBJ_EDITOR;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)cocos2dx;$(SolutionDir)cocos2dx\include;$(SolutionDir)cocos2dx\kazmath\include;$(SolutionDir)cocos2dx\platform;$(SolutionDir)cocos2dx\platform\win32;$(SolutionDir)cocos2dx\platform\third_party\win32;$(SolutionDir)cocos2dx\platform\third_party\win32\pthread;$(SolutionDir)cocos2dx\platform\third_party\win32\OGLES;$(SolutionDir)CocosDenshion\include;$(SolutionDir)extensions;$(SolutionDir)extensions\GUI;$(SolutionDir)extensions\CocoStudio\GUI;$(SolutionDir)extensions\CocoStudio\GUI\System;$(SolutionDir)extensions\CocoStudio\GUI\BaseClasses;$(SolutionDir)extensions\CocoStudio\GUI\Layouts;$(SolutionDir)extensions\CocoStudio\GUI\UIWidgets;$(SolutionDir)Include;$(SolutionDir)Common;..\Render;$(SolutionDir)engine\inc;../;$(SolutionDir)../Common;$(SolutionDir)../Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4251;4244;</DisableSpecificWarnings>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\audio\AudioSystem.cpp" />
+    <ClCompile Include="..\common\ConfigFileManager.cpp" />
+    <ClCompile Include="..\common\StringConvert.cpp" />
+    <ClCompile Include="..\common\WareFileRead.cpp" />
+    <ClCompile Include="..\common\WareFileWrite.cpp" />
+    <ClCompile Include="..\common\StringUtility.cpp" />
+    <ClCompile Include="..\common\WareIniFile.cpp" />
+    <ClCompile Include="..\engine\InputManager.cpp" />
+    <ClCompile Include="..\engine\WareAppDelegate.cpp" />
+    <ClCompile Include="..\engine\WareTime.cpp" />
+    <ClCompile Include="..\render\AnimationRes.cpp" />
+    <ClCompile Include="..\render\AnimationResManager.cpp" />
+    <ClCompile Include="..\render\AniSpriteObj.cpp" />
+    <ClCompile Include="..\render\CEffect.cpp" />
+    <ClCompile Include="..\render\CEffectManager.cpp" />
+    <ClCompile Include="..\render\CEffectProp.cpp" />
+    <ClCompile Include="..\render\CEffectPropManager.cpp" />
+    <ClCompile Include="..\render\CEffectSprite.cpp" />
+    <ClCompile Include="..\render\CEffectUnit.cpp" />
+    <ClCompile Include="..\render\CEffectUnitProp.cpp" />
+    <ClCompile Include="..\render\CParticleSystem.cpp" />
+    <ClCompile Include="..\render\CParticleSystemProp.cpp" />
+    <ClCompile Include="..\render\CTextureAnimation.cpp" />
+    <ClCompile Include="..\render\CTextureAnimationProp.cpp" />
+    <ClCompile Include="..\render\DragonBoneAnimation.cpp" />
+    <ClCompile Include="..\render\CMaskSprite.cpp" />
+    <ClCompile Include="..\render\DragonBoneSpriteObj.cpp" />
+    <ClCompile Include="..\render\ImageLayer.cpp" />
+    <ClCompile Include="..\render\RenderText.cpp" />
+    <ClCompile Include="..\render\RenderObj.cpp" />
+    <ClCompile Include="..\render\RenderObjManager.cpp" />
+    <ClCompile Include="..\render\RenderObjModel.cpp" />
+    <ClCompile Include="..\render\RenderSystem.cpp" />
+    <ClCompile Include="..\render\RenderMap.cpp" />
+    <ClCompile Include="..\render\RectangleObj.cpp" />
+    <ClCompile Include="..\render\RenderableManager.cpp" />
+    <ClCompile Include="..\render\RenderTextManager.cpp" />
+    <ClCompile Include="..\render\SceneLayer.cpp" />
+    <ClCompile Include="..\render\SceneManager.cpp" />
+    <ClCompile Include="..\render\ShaderManager.cpp" />
+    <ClCompile Include="..\render\SpriteFrameSet.cpp" />
+    <ClCompile Include="..\render\SpriteObj.cpp" />
+    <ClCompile Include="..\render\TerrainBlock.cpp" />
+    <ClCompile Include="..\render\TerrainGrid.cpp" />
+    <ClCompile Include="..\render\TerrainMask.cpp" />
+    <ClCompile Include="..\render\tinystr.cpp" />
+    <ClCompile Include="..\render\tinyxml.cpp" />
+    <ClCompile Include="..\render\tinyxmlerror.cpp" />
+    <ClCompile Include="..\render\tinyxmlparser.cpp" />
+    <ClCompile Include="..\render\WareAnimate.cpp" />
+    <ClCompile Include="..\render\WareSprite.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\audio\AudioSystem.h" />
+    <ClInclude Include="..\engine\InputManager.h" />
+    <ClInclude Include="..\inc\CMaskSprite.h" />
+    <ClInclude Include="..\inc\cocos2dx_engine.h" />
+    <ClInclude Include="..\inc\cocos2dx_macros.h" />
+    <ClInclude Include="..\inc\cocos2dx_types.h" />
+    <ClInclude Include="..\inc\ConfigFileManager.h" />
+    <ClInclude Include="..\inc\CSVFileCommon.h" />
+    <ClInclude Include="..\inc\DataContent.h" />
+    <ClInclude Include="..\inc\FileCommon.h" />
+    <ClInclude Include="..\inc\IAudioSytem.h" />
+    <ClInclude Include="..\inc\IRenderObj.h" />
+    <ClInclude Include="..\inc\IRenderSystem.h" />
+    <ClInclude Include="..\inc\IRenderText.h" />
+    <ClInclude Include="..\inc\MessageCommon.h" />
+    <ClInclude Include="..\inc\RenderCommon.h" />
+    <ClInclude Include="..\inc\StringConvert.h" />
+    <ClInclude Include="..\inc\StringUtility.h" />
+    <ClInclude Include="..\inc\tinystr.h" />
+    <ClInclude Include="..\inc\tinyxml.h" />
+    <ClInclude Include="..\inc\WareAppDelegate.h" />
+    <ClInclude Include="..\inc\WareFileRead.h" />
+    <ClInclude Include="..\inc\WareFileWrite.h" />
+    <ClInclude Include="..\inc\WareIniFile.h" />
+    <ClInclude Include="..\inc\WareTime.h" />
+    <ClInclude Include="..\render\AnimationRes.h" />
+    <ClInclude Include="..\render\AnimationResManager.h" />
+    <ClInclude Include="..\render\AniSpriteObj.h" />
+    <ClInclude Include="..\render\CEffect.h" />
+    <ClInclude Include="..\render\CEffectManager.h" />
+    <ClInclude Include="..\render\CEffectProp.h" />
+    <ClInclude Include="..\render\CEffectPropManager.h" />
+    <ClInclude Include="..\render\CEffectSprite.h" />
+    <ClInclude Include="..\render\CEffectUnit.h" />
+    <ClInclude Include="..\render\CEffectUnitProp.h" />
+    <ClInclude Include="..\render\CParticleSystem.h" />
+    <ClInclude Include="..\render\CParticleSystemProp.h" />
+    <ClInclude Include="..\render\CTextureAnimation.h" />
+    <ClInclude Include="..\render\CTextureAnimationProp.h" />
+    <ClInclude Include="..\render\DragonBoneSpriteObj.h" />
+    <ClInclude Include="..\render\EffectProp.h" />
+    <ClInclude Include="..\render\IAnimation.h" />
+    <ClInclude Include="..\render\DragonBoneAnimation.h" />
+    <ClInclude Include="..\render\IEffectProp.h" />
+    <ClInclude Include="..\render\IEffectUnit.h" />
+    <ClInclude Include="..\render\IEffectUnitProp.h" />
+    <ClInclude Include="..\render\ImageLayer.h" />
+    <ClInclude Include="..\render\RenderText.h" />
+    <ClInclude Include="..\render\RenderObj.h" />
+    <ClInclude Include="..\render\RenderObjManager.h" />
+    <ClInclude Include="..\render\IRenderable.h" />
+    <ClInclude Include="..\render\RenderObjModel.h" />
+    <ClInclude Include="..\render\RenderSystem.h" />
+    <ClInclude Include="..\render\RenderMap.h" />
+    <ClInclude Include="..\render\RectangleObj.h" />
+    <ClInclude Include="..\render\RenderableManager.h" />
+    <ClInclude Include="..\render\RenderTextManager.h" />
+    <ClInclude Include="..\render\SceneLayer.h" />
+    <ClInclude Include="..\render\SceneManager.h" />
+    <ClInclude Include="..\render\ShaderManager.h" />
+    <ClInclude Include="..\render\SpriteFrameSet.h" />
+    <ClInclude Include="..\render\SpriteObj.h" />
+    <ClInclude Include="..\render\TerrainBlock.h" />
+    <ClInclude Include="..\render\TerrainGrid.h" />
+    <ClInclude Include="..\render\TerrainMask.h" />
+    <ClInclude Include="..\render\WareAnimate.h" />
+    <ClInclude Include="..\render\WareSprite.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Android.mk" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
