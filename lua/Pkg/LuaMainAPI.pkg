@@ -1,0 +1,25 @@
+
+$#include "cocos2dx_types.h"
+
+typedef unsigned char       byte;
+typedef unsigned char       BYTE;
+
+typedef char				int8;
+typedef short				int16;
+typedef int                 int32;
+
+typedef unsigned char       uint8;
+typedef unsigned short      uint16;
+typedef unsigned long       uint32;
+
+typedef float				float32;
+typedef double				float64;
+
+typedef __int64             longlong;
+
+
+$cfile "../GameLuaAPI/GameLuaAPI.h"
+
+
+/// $pfile "*.pkg"
+
