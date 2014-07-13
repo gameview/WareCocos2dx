@@ -12,7 +12,7 @@
 - 序列帧动画(WareAnimation)
 - 简单拼接场景
 - UI扩展<br>
-    增加了基于CocoStudioUI库的Html格式解析控件并导出到lua,可以使用在Lua中使用
+    增加了基于CocoStudioUI库的Html格式解析控件并导出到lua
 - 增强Cocos2dx自带的Lua引擎，可以方便执行C++中的函数
 
 #编辑器
